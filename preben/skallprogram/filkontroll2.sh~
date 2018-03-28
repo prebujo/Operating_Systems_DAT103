@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if ((#$ != 2)); then
+    echo "feil antall args"
+    exit 1
+fi
+
+
+declare FILNAVN=$1
+declare -i INT=$2
+declare STATE=0
+STATE=state -c FILNAVN
+declate NEW_STATE=0
+
+while ((true))

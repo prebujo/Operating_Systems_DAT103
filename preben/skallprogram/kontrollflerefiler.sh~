@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in $@
+do
+    ( ./filkontroll2.sh $file 5 ) &
+done
+wait -n
+
+   

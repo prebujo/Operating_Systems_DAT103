@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Hvilken hendelse?"
+
+read NAME
+
+declare -i SUM
+
+while read -r INCI AMOUNT
+do
+	SUM+=$AMOUNT
+done <<< $(grep $NAME $1)
+	
+echo "SUM: $SUM"
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Hvilke tall ønsker du å summere? (enter mellom hvert tall og ctrl+d avslutter)"
+
+declare SUM=0
+
+SUM+=$(readline)
+
+echo "Summer er $SUM"
